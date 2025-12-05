@@ -1,0 +1,192 @@
+/* === ОСНОВНОЙ ФОН СТРАНИЦЫ С ИЗОБРАЖЕНИЕМ СПРАВА === */
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background: #0a0a0a url('../main.jpg') no-repeat right center fixed;
+    background-size: contain;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* === ХЕДЕР — ОДИН ЕДИНСТВЕННЫЙ === */
+header {
+    width: 100%;
+    padding: 20px 0;
+    background: rgba(15, 15, 15, 0.9); /* Полупрозрачный для видимости фона */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #520000;
+    backdrop-filter: blur(5px); /* Легкое размытие для эффекта */
+}
+
+/* Название */
+.header-title {
+    font-size: 48px;
+    font-weight: 900;
+    letter-spacing: 3px;
+    color: #d60000;
+    text-transform: uppercase;
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Навигация */
+.header-nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Кнопки — КРАСНЫЕ */
+.header-nav a {
+    text-decoration: none;
+    background: #d60000;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.header-nav a:hover {
+    background: #ff1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* === ОСНОВНОЕ СОДЕРЖИМОЕ === */
+main {
+    min-height: 70vh;
+    padding: 40px 20px;
+    background: rgba(10, 10, 10, 0.7); /* Полупрозрачный темный фон для читаемости */
+    backdrop-filter: blur(3px);
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.park-container {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.park-title {
+    font-size: 42px;
+    color: #d60000;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.park-grid {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.moto-card {
+    width: 330px;
+    background: rgba(17, 17, 17, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    border: 1px solid #333;
+    transition: 0.3s;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+.moto-card:hover {
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+    transform: translateY(-8px);
+    background: rgba(25, 25, 25, 0.95);
+}
+
+.moto-img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #444;
+}
+
+.moto-card h3 {
+    color: #d60000;
+    margin-top: 15px;
+    font-size: 22px;
+}
+
+.moto-desc {
+    margin-top: 8px;
+    font-size: 15px;
+    color: #cccccc;
+}
+
+/* === ФУТЕР === */
+.main-footer {
+    background: rgba(17, 17, 17, 0.9);
+    color: #fff;
+    padding: 40px 0 20px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 2px solid #c2c2c2;
+    backdrop-filter: blur(5px);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Заголовок футера */
+.main-footer h3 {
+    font-size: 26px;
+    margin: 0 0 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.main-footer h3 span {
+    color: #d60000;
+}
+
+/* Описание */
+.main-footer p {
+    font-size: 14px;
+    opacity: 0.8;
+    margin: 0;
+}
+
+/* Навигация */
+.footer-nav {
+    margin: 25px 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: 0.3s ease;
+    opacity: 0.85;
+}
+
+.footer-nav a:hover {
+    color: #d60000;
+    opacity: 1;
+}
+
+/* Нижняя строка копирайта */
+.footer-copy {
+    font-size: 14px;
+    opacity: 0.6;
+    margin-top: 20px;
+}
